@@ -1,6 +1,2 @@
-github.com/j1mh0/bigbrother/log v0.0.0-20180910062839-2869032b05ee h1:OBUO+9ZDhp/T/4Upy1AfyYOXFd/e7TIDV8JajFIAjYE=
-github.com/j1mh0/bigbrother/log v0.0.0-20180910062839-2869032b05ee/go.mod h1:arpUOqOJ0BYg2fyfDgAPy2DMsLlEFrqBx1/E8yszWpA=
-github.com/j1mh0/bigbrother/log v0.0.0-20180910064256-7e93a9bc7723 h1:uKLvRY4hFzq1IAsn6bsmqCyzYIa3sQwqwpHLWJXbsIc=
-github.com/j1mh0/bigbrother/log v0.0.0-20180910064256-7e93a9bc7723/go.mod h1:arpUOqOJ0BYg2fyfDgAPy2DMsLlEFrqBx1/E8yszWpA=
-github.com/j1mh0/bigbrother/log v0.0.0-20180910072323-89a48aa1a0e0 h1:F93CMd05DrqD0sJeTqXmv0OjxvUsj3OM5/LeC02C4pw=
-github.com/j1mh0/bigbrother/log v0.0.0-20180910072323-89a48aa1a0e0/go.mod h1:arpUOqOJ0BYg2fyfDgAPy2DMsLlEFrqBx1/E8yszWpA=
+github.com/rs/zerolog v1.8.0 h1:Oglcb4i6h42uWacEjomB2MI8gfkwCwTMFaDY3+Vgj5k=
+github.com/rs/zerolog v1.8.0/go.mod h1:YbFCdg8HfsridGWAh22vktObvhZbQsZXe4/zB0OKkWU=
