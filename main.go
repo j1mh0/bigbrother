@@ -6,4 +6,5 @@ import (
 
 func main() {
 	log.Debug("Hello")
+	log.Debug("World.")
 }
