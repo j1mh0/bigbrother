@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-//debug level logging
+//Debug level logging
 func Debug(message string) {
 	fmt.Println(message)
 }
