@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	log.debug("Hello")
+	log.Debug("Hello")
 }

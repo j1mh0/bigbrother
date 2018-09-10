@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
-func debug(message string) {
+//debug level logging
+func Debug(message string) {
 	fmt.Println(message)
 }
