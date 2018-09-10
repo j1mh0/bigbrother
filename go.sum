@@ -1,2 +1,4 @@
 github.com/j1mh0/bigbrother/log v0.0.0-20180910062839-2869032b05ee h1:OBUO+9ZDhp/T/4Upy1AfyYOXFd/e7TIDV8JajFIAjYE=
 github.com/j1mh0/bigbrother/log v0.0.0-20180910062839-2869032b05ee/go.mod h1:arpUOqOJ0BYg2fyfDgAPy2DMsLlEFrqBx1/E8yszWpA=
+github.com/j1mh0/bigbrother/log v0.0.0-20180910064256-7e93a9bc7723 h1:uKLvRY4hFzq1IAsn6bsmqCyzYIa3sQwqwpHLWJXbsIc=
+github.com/j1mh0/bigbrother/log v0.0.0-20180910064256-7e93a9bc7723/go.mod h1:arpUOqOJ0BYg2fyfDgAPy2DMsLlEFrqBx1/E8yszWpA=
