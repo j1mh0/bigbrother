@@ -2,65 +2,38 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"log"
 
 	"gopkg.in/yaml.v2"
 )
 
-// var data = `
-// a: Easy!
-// b:
-//   c: 2
-//   d: [3, 4]
-// `
-
-var data = `
-name: jim
-gender: male
-son:
-- name: jerry
-- gender: male
-`
-
-// Note: struct fields must be public in order for unmarshal to
-// correctly populate the data.
-// type T struct {
-// 	A string
-// 	B struct {
-// 		RenamedC int   `yaml:"c"`
-// 		D        []int `yaml:",flow"`
-// 	}
-// }
+type Config struct {
+	Project string
+	Author  string `yaml:"author"`
+	Version float32
+	Content []string
+}
 
 func main() {
-	// t := T{}
 
-	// err := yaml.Unmarshal([]byte(data), &t)
-	// if err != nil {
-	// 	log.Fatalf("error: %v", err)
-	// }
-	// fmt.Printf("--- t:\n%v\n\n", t)
-
-	// d, err := yaml.Marshal(&t)
-	// if err != nil {
-	// 	log.Fatalf("error: %v", err)
-	// }
-	// fmt.Printf("--- t dump:\n%s\n\n", string(d))
-
-	m := make(map[interface{}]interface{})
-
-	err := yaml.Unmarshal([]byte(data), &m)
+	configFile, err := ioutil.ReadFile("test.yaml")
 	if err != nil {
-		log.Fatalf("error: %v", err)
+		log.Fatal("read config file error:", err)
+		return
 	}
-	// fmt.Printf("--- m:\n%v\n\n", m)
-	son := m["son"]
 
-	fmt.Println(son)
-
-	d, err := yaml.Marshal(&m)
+	config := Config{}
+	err = yaml.Unmarshal(configFile, &config)
 	if err != nil {
-		log.Fatalf("error: %v", err)
+		log.Fatal("read config struct error:", err)
+		return
 	}
-	fmt.Printf("--- m dump:\n%s\n\n", string(d))
+
+	fmt.Printf("Project: %s\nAuthor: %s\nVersion: %g\n", config.Project, config.Author, config.Version)
+
+	for _, value := range config.Content {
+		fmt.Println(value)
+	}
+
 }
