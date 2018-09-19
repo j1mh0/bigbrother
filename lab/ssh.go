@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net"
 	"time"
 
@@ -54,20 +53,20 @@ func connect(user, password, host string, port int) (*ssh.Session, error) {
 	return session, nil
 }
 
-func main() {
-	session, err := connect(USER, PASS, HOST, PORT)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer session.Close()
+// func main() {
+// 	session, err := connect(USER, PASS, HOST, PORT)
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+// 	defer session.Close()
 
-	// session.Stdout = os.Stdout
-	// session.Stderr = os.Stderr
-	// session.Run("ls /")
+// 	// session.Stdout = os.Stdout
+// 	// session.Stderr = os.Stderr
+// 	// session.Run("ls /")
 
-	out, err := session.CombinedOutput("ls /")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(string(out))
-}
+// 	out, err := session.CombinedOutput("ls /")
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+// 	fmt.Println(string(out))
+// }
