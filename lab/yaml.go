@@ -15,10 +15,10 @@ import (
 // `
 
 var data = `
-name: hejun
+name: jim
 gender: male
 son:
-- name: jianrui
+- name: jerry
 - gender: male
 `
 
